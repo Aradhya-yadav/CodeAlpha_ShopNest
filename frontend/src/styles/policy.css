@@ -1,0 +1,150 @@
+.policy-page{
+  min-height:100vh;
+  padding:60px 20px;
+
+  background:
+  radial-gradient(circle at top left,#f97316 0%,transparent 25%),
+  radial-gradient(circle at bottom right,#2563eb 0%,transparent 25%),
+  #0f172a;
+
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+}
+
+.policy-card{
+  width:100%;
+  max-width:950px;
+
+  background:white;
+  padding:50px;
+  border-radius:30px;
+
+  box-shadow:
+  0 20px 50px rgba(0,0,0,.15);
+}
+
+.policy-card h1{
+  font-size:3rem;
+  text-align:center;
+  margin-bottom:20px;
+  color:#111827;
+}
+
+.policy-intro{
+  text-align:center;
+  color:#64748b;
+  line-height:1.9;
+  margin-bottom:40px;
+  font-size:1.05rem;
+}
+
+.policy-section{
+  margin-bottom:25px;
+  padding:25px;
+
+  background:#f8fafc;
+  border-radius:18px;
+
+  border-left:5px solid #f97316;
+
+  transition:.3s;
+}
+
+.policy-section:hover{
+  transform:translateY(-4px);
+  box-shadow:
+  0 10px 25px rgba(0,0,0,.08);
+}
+
+.policy-section h3{
+  color:#f97316;
+  margin-bottom:10px;
+}
+
+.policy-section p{
+  color:#475569;
+  line-height:1.8;
+}
+
+.support-email{
+  display:inline-block;
+  margin-top:10px;
+
+  background:#eff6ff;
+  color:#2563eb;
+
+  padding:10px 18px;
+  border-radius:12px;
+
+  font-weight:700;
+}
+
+@media(max-width:768px){
+
+  .policy-card{
+    padding:30px 20px;
+  }
+
+  .policy-card h1{
+    font-size:2rem;
+  }
+}
+.policy-badge{
+  width:max-content;
+  margin:0 auto 30px;
+
+  background:#dcfce7;
+  color:#15803d;
+
+  padding:10px 18px;
+  border-radius:999px;
+
+  font-weight:600;
+}
+.contact-box{
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+  margin-top:15px;
+}
+.policy-card{
+  position:relative;
+  overflow:hidden;
+}
+
+.policy-card::before{
+  content:"";
+  position:absolute;
+  top:-100px;
+  right:-100px;
+
+  width:250px;
+  height:250px;
+
+  background:
+  radial-gradient(
+    rgba(249,115,22,.15),
+    transparent
+  );
+
+  border-radius:50%;
+}
+
+.policy-card::after{
+  content:"";
+  position:absolute;
+  bottom:-120px;
+  left:-120px;
+
+  width:300px;
+  height:300px;
+
+  background:
+  radial-gradient(
+    rgba(37,99,235,.12),
+    transparent
+  );
+
+  border-radius:50%;
+}
